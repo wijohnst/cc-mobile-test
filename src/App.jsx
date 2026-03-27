@@ -12,58 +12,59 @@ const NAV_LINKS = [
 ]
 
 const SERVICES = [
-  { day: 'Sunday', time: '8:00 AM', name: 'Holy Eucharist, Rite I', note: 'Traditional' },
-  { day: 'Sunday', time: '10:15 AM', name: 'Holy Eucharist, Rite II', note: 'Contemporary' },
-  { day: 'Wednesday', time: '12:00 PM', name: 'Midweek Eucharist', note: '' },
+  { day: 'Sunday', time: '8:00 AM', name: 'Holy Eucharist', note: 'Sep – May' },
+  { day: 'Sunday', time: '10:30 AM', name: 'Holy Eucharist', note: 'Sep – May · 9 AM Jun–Aug' },
+  { day: 'Wednesday', time: '8:00 AM', name: 'Healing Eucharist', note: '' },
+  { day: 'Friday', time: '9:00 AM', name: 'Morning Prayer', note: '' },
 ]
 
 const EVENTS = [
   {
-    date: 'Apr 13',
-    title: 'Palm Sunday Procession',
-    desc: 'Join us as we welcome Jesus into Jerusalem. Palms distributed before the service.',
-    category: 'Worship',
+    date: 'Every Tuesday',
+    title: 'Community Food Pantry',
+    desc: 'Open 8:45 AM – 12:00 PM. All are welcome. Coordinated by Pat Johnson.',
+    category: 'Outreach',
   },
   {
-    date: 'Apr 17',
-    title: 'Maundy Thursday Service',
-    desc: 'A service of foot washing, Holy Eucharist, and stripping of the altar at 7:00 PM.',
-    category: 'Holy Week',
+    date: '2nd & 4th Saturdays',
+    title: 'Saturday Suppers',
+    desc: 'Community meals served 4:00 – 5:30 PM. Take-out available. Coordinated by Rosemary Daubert.',
+    category: 'Outreach',
   },
   {
-    date: 'Apr 20',
-    title: 'Easter Sunday Celebration',
-    desc: 'The Great Vigil at 8 PM Saturday. Easter services at 8:00 AM and 10:15 AM.',
-    category: 'Easter',
+    date: 'Sundays',
+    title: 'Adult Formation',
+    desc: 'Join us between services for adult education, discussion, and growing in discipleship.',
+    category: 'Formation',
   },
 ]
 
 const NEWS = [
   {
-    title: 'New Adult Formation Series Begins',
-    date: 'March 10, 2026',
+    title: 'Food Pantry Open Every Tuesday',
+    date: 'Ongoing',
     excerpt:
-      'Our spring Adult Formation series explores the intersection of faith and justice. All are welcome to attend.',
+      'Our parish food pantry is open every Tuesday from 8:45 AM to noon. Volunteers are always welcome — contact the office to help.',
   },
   {
-    title: 'Food Pantry Needs Volunteers',
-    date: 'March 5, 2026',
+    title: 'Saturday Suppers Continue This Month',
+    date: 'Ongoing',
     excerpt:
-      'The Lewiston Community Food Bank is seeking volunteers on the 2nd and 4th Saturdays of each month.',
+      'Community meals on the 2nd and 4th Saturdays, 4:00–5:30 PM. Take-out is available. All are welcome at the table.',
   },
   {
-    title: "Bishop's Visit — April 27",
-    date: 'February 28, 2026',
+    title: 'Services Available Online',
+    date: 'Year-round',
     excerpt:
-      'Bishop Hailey will celebrate the 10:15 AM Eucharist and administer Confirmation on April 27.',
+      'Can\'t join us in person? All Sunday and weekday services can be joined online. Visit our website for the livestream link.',
   },
 ]
 
 const MINISTRIES = [
-  { title: 'Outreach & Justice', icon: '✦', desc: 'Food pantry, housing advocacy, and community partnerships.' },
-  { title: 'Adult Formation', icon: '✦', desc: 'Education, book studies, and confirmation preparation.' },
-  { title: 'Music & Worship', icon: '✦', desc: 'Choir, handbells, and curated liturgical music for every season.' },
-  { title: 'Youth & Family', icon: '✦', desc: 'Programs for children, youth, and families at every stage.' },
+  { title: 'Community Food Pantry', icon: '✦', desc: 'Open every Tuesday, 8:45 AM – noon. Feeding neighbors in the Lewiston–Clarkston Valley.' },
+  { title: 'Saturday Suppers', icon: '✦', desc: 'Community meals on the 2nd & 4th Saturdays, 4–5:30 PM. Take-out available.' },
+  { title: 'Music & Worship', icon: '✦', desc: 'A rich musical tradition with choir, organ, and liturgical music at every Eucharist.' },
+  { title: 'Discipleship & Formation', icon: '✦', desc: 'Worship, study, and service — growing together in faith as the body of Christ.' },
 ]
 
 // ─── Colors ──────────────────────────────────────────────────────────────────
@@ -195,7 +196,7 @@ function Hero() {
         </p>
 
         <p className="text-gray-400 text-base md:text-lg mb-10 max-w-lg leading-relaxed">
-          A community of faith rooted in tradition, open to all — in the heart of Lewiston, Idaho since 1862.
+          Feeding body, mind, and soul — rooted in tradition, open to all, in the heart of Lewiston, Idaho since 1864.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4">
@@ -284,14 +285,16 @@ function Welcome() {
             A Place of Belonging,<br />Grace &amp; Service
           </h2>
           <p className="text-gray-600 leading-relaxed mb-4 text-base">
-            The Church of the Nativity has served the Lewiston–Clarkston Valley since 1862. We are
-            part of the Episcopal Diocese of Idaho and the worldwide Anglican Communion — a community
-            where ancient faith meets everyday life.
+            The Church of the Nativity takes its name from the first Episcopal service held in the
+            Lewiston–Clarkston Valley — on Christmas Day, 1864. We are part of the Episcopal Diocese
+            of Spokane and the worldwide Anglican Communion — a community where ancient faith meets
+            everyday life.
           </p>
           <p className="text-gray-600 leading-relaxed mb-8 text-base">
-            Whether you are returning to church, exploring Christianity for the first time, or simply
-            looking for community, you are welcome here exactly as you are. No matter your background,
-            identity, or questions, there is a place for you at this table.
+            Our mission is <em>"Feeding body, mind, and soul"</em> — through our community food
+            pantry and Saturday Suppers, worship and formation, and a rich tradition of music and
+            liturgy. Whether you are new to faith or returning after years away, you are welcome here
+            exactly as you are.
           </p>
           <a
             href="#about"
@@ -526,22 +529,22 @@ function Footer() {
               style={{ color: C.lightBlue }}
               className="text-xs tracking-widest uppercase mb-5"
             >
-              Episcopal Diocese of Idaho
+              Episcopal Diocese of Spokane
             </p>
             <div className="flex flex-col gap-3 text-gray-400 text-sm">
               <div className="flex items-start gap-2.5">
                 <MapPin size={15} className="mt-0.5 shrink-0" style={{ color: C.lightBlue }} />
                 <span>
-                  1208 26th St<br />Lewiston, ID 83501
+                  731 8th Street<br />Lewiston, ID 83501
                 </span>
               </div>
               <div className="flex items-center gap-2.5">
                 <Phone size={15} style={{ color: C.lightBlue }} />
-                <span>(208) 743-2221</span>
+                <span>(208) 743-9121</span>
               </div>
               <div className="flex items-center gap-2.5">
                 <Mail size={15} style={{ color: C.lightBlue }} />
-                <span>office@nativitylewiston.org</span>
+                <span>office@nativitylewiston.com</span>
               </div>
             </div>
           </div>
@@ -597,12 +600,9 @@ function Footer() {
         {/* Bottom bar */}
         <div className="border-t pt-8 flex flex-col sm:flex-row items-center justify-between gap-4" style={{ borderColor: 'rgba(255,255,255,0.1)' }}>
           <p className="text-gray-500 text-xs">
-            © 2026 Church of the Nativity, Lewiston, Idaho. Member of the Episcopal Diocese of Idaho.
+            © 2026 Church of the Nativity, Lewiston, Idaho. Member of the Episcopal Diocese of Spokane.
           </p>
           <div className="flex gap-5 text-gray-500 text-xs">
-            <a href="#" className="hover:text-white transition-colors no-underline">
-              Privacy Policy
-            </a>
             <a
               href="https://www.episcopalchurch.org"
               target="_blank"
@@ -611,8 +611,21 @@ function Footer() {
             >
               The Episcopal Church
             </a>
-            <a href="#" className="hover:text-white transition-colors no-underline">
-              Diocese of Idaho
+            <a
+              href="https://www.spokanediocese.org"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-white transition-colors no-underline"
+            >
+              Diocese of Spokane
+            </a>
+            <a
+              href="https://www.facebook.com/episcopalnativity/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-white transition-colors no-underline"
+            >
+              Facebook
             </a>
           </div>
         </div>
