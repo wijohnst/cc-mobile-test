@@ -156,7 +156,7 @@ function Hero() {
     <section
       className="relative flex items-center justify-center text-center min-h-screen pt-16"
       style={{
-        background: `linear-gradient(160deg, ${C.navy} 0%, #1e3a5f 55%, #2c4a72 100%)`,
+        background: `linear-gradient(0deg, ${C.navy} 0%, #1e3a5f 55%, #2c4a72 100%)`,
       }}
     >
       {/* Subtle cross watermark */}
@@ -173,11 +173,6 @@ function Hero() {
         </svg>
       </div>
 
-      {/* Decorative top rule */}
-      <div
-        className="absolute top-20 left-1/2 -translate-x-1/2 w-px"
-        style={{ height: 48, background: `linear-gradient(to bottom, transparent, ${C.lightBlue})` }}
-      />
 
       <div className="relative z-10 max-w-3xl mx-auto px-6 py-28 flex flex-col items-center">
         <p style={{ color: C.lightBlue }} className="text-xs tracking-widest uppercase mb-5">
