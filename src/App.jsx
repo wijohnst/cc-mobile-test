@@ -155,10 +155,22 @@ function Hero() {
   return (
     <section
       className="relative flex items-center justify-center text-center min-h-screen pt-16"
-      style={{
-        background: `linear-gradient(160deg, ${C.navy} 0%, #1e3a5f 55%, #2c4a72 100%)`,
-      }}
+      style={{ background: '#1e3a5f' }}
     >
+      {/* Episcopal church door — abstracted Gothic pointed arch */}
+      <svg
+        aria-hidden="true"
+        xmlns="http://www.w3.org/2000/svg"
+        className="absolute inset-0 w-full h-full pointer-events-none select-none"
+        viewBox="0 0 1000 800"
+        preserveAspectRatio="xMidYMid slice"
+      >
+        <path
+          d="M 350 1000 L 350 360 Q 350 80 500 80 Q 650 80 650 360 L 650 1000 Z"
+          fill="#0d2040"
+        />
+      </svg>
+
       {/* Subtle cross watermark */}
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none select-none">
         <svg
