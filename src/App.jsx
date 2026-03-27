@@ -157,18 +157,24 @@ function Hero() {
       className="relative flex items-center justify-center text-center min-h-screen pt-16"
       style={{ background: '#1e3a5f' }}
     >
-      {/* Episcopal church door — abstracted Gothic pointed arch */}
+      {/* Episcopal church door — abstracted Gothic pointed arch, outline only */}
       <svg
         aria-hidden="true"
         xmlns="http://www.w3.org/2000/svg"
         className="absolute inset-0 w-full h-full pointer-events-none select-none"
-        viewBox="0 0 1000 800"
-        preserveAspectRatio="xMidYMid slice"
+        viewBox="0 0 1000 900"
+        preserveAspectRatio="none"
       >
-        <path
-          d="M 350 1000 L 350 360 Q 350 80 500 80 Q 650 80 650 360 L 650 1000 Z"
-          fill="#0d2040"
-        />
+        <g transform="rotate(-16, 500, 450)">
+          <path
+            d="M 380 1100 L 380 430 C 380 230 455 145 500 110 C 545 145 620 230 620 430 L 620 1100"
+            fill="none"
+            stroke="#0d2040"
+            strokeWidth="18"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+        </g>
       </svg>
 
       {/* Subtle cross watermark */}
