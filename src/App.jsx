@@ -165,9 +165,9 @@ function Hero() {
         viewBox="0 0 1000 900"
         preserveAspectRatio="none"
       >
-        <g transform="rotate(-16, 500, 450)">
+        <g transform="rotate(-4, 500, 450)">
           <path
-            d="M 380 1100 L 380 430 C 380 230 455 145 500 110 C 545 145 620 230 620 430 L 620 1100"
+            d="M 140 1100 L 140 430 C 140 230 365 145 500 110 C 635 145 860 230 860 430 L 860 1100"
             fill="none"
             stroke="#0d2040"
             strokeWidth="18"
@@ -176,20 +176,6 @@ function Hero() {
           />
         </g>
       </svg>
-
-      {/* Subtle cross watermark */}
-      <div className="absolute inset-0 flex items-center justify-center pointer-events-none select-none">
-        <svg
-          width="480"
-          height="480"
-          viewBox="0 0 100 100"
-          fill="white"
-          style={{ opacity: 0.04 }}
-        >
-          <rect x="43" y="8" width="14" height="84" />
-          <rect x="8" y="36" width="84" height="14" />
-        </svg>
-      </div>
 
       {/* Decorative top rule */}
       <div
