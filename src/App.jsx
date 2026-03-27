@@ -165,16 +165,14 @@ function Hero() {
         viewBox="0 0 1000 900"
         preserveAspectRatio="none"
       >
-        <g transform="rotate(-4, 500, 450)">
-          <path
-            d="M 140 1100 L 140 430 C 140 230 365 145 500 110 C 635 145 860 230 860 430 L 860 1100"
-            fill="none"
-            stroke="#0d2040"
-            strokeWidth="18"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-        </g>
+        <path
+          d="M 140 1100 L 140 430 C 140 230 365 145 500 110 C 635 145 860 230 860 430 L 860 1100"
+          fill="none"
+          stroke="#0d2040"
+          strokeWidth="18"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
       </svg>
 
 
