@@ -177,11 +177,6 @@ function Hero() {
         </g>
       </svg>
 
-      {/* Decorative top rule */}
-      <div
-        className="absolute top-20 left-1/2 -translate-x-1/2 w-px"
-        style={{ height: 48, background: `linear-gradient(to bottom, transparent, ${C.lightBlue})` }}
-      />
 
       <div className="relative z-10 max-w-3xl mx-auto px-6 py-28 flex flex-col items-center">
         <p style={{ color: C.lightBlue }} className="text-xs tracking-widest uppercase mb-5">
